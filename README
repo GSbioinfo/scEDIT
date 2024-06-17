@@ -37,11 +37,11 @@ scEDIT starts with raw sequence data from Tapestry library, extracts and identif
 List any prerequisites, for example:
 
 - Python 3.9
-- Dependencies src/.yml
+- Dependencies in src/scEDIT_conda_env_packageList.yml
 
 ### Installation Steps
 Download the folder with all the 
-Create conda environment using the file src/.yml
+Create conda environment using the file src/scEDIT_conda_env_packageList.yml
 
 ### Implementation (run in scEDIT conda environment)
  
@@ -62,6 +62,9 @@ final_count folder also contains plots showing cell rank and barcode count.
 ###Single cell CRISPR data analyzed using scEDIT is from work of Elisa ten Hacken et al published in Genome Biology
 High throughput single-cell detection of multiplex CRISPR-edited gene modifications
 https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02174-1
+
+For converting sra file to fastq file use following command
+parallel-fastq-dump --sra-id SRR####.sra --threads 12 --split-files --origfmt --gzip --defline-seq '@$ac.$sn[_$rn].$ri' –outdir /your_Tapestri_Fastq_data_dir
 
 ##License
 scEDIT is avaible under MIT licence.
