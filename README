@@ -64,7 +64,7 @@ High throughput single-cell detection of multiplex CRISPR-edited gene modificati
 https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02174-1
 
 For converting sra file to fastq file use following command
-parallel-fastq-dump --sra-id SRR####.sra --threads 12 --split-files --origfmt --gzip --defline-seq '@$ac.$sn[_$rn].$ri' –outdir /your_Tapestri_Fastq_data_dir
+parallel-fastq-dump --sra-id $srr --threads 12 --split-files --origfmt --gzip --defline-seq '@$ac.$sn  $sn length=$rl' --include-technical --outdir /your_fastq_dir
 
 ##License
 scEDIT is avaible under MIT licence.
