@@ -45,7 +45,7 @@ Create conda environment using the file src/scEDIT_conda_env_packageList.yml
 
 ### Implementation (run in scEDIT conda environment)
  
-$ipython /full-directory-path/scEDIT_TapRipper_Wrapper.py /full-directory-path/SampleSheet.xlsx /full-directory-path/output-dir
+$ipython /full-directory-path/src/scEDIT_TapRipper_Wrapper.py /full-directory-path/SampleSheet.xlsx /full-directory-path/output-dir
 
 Above command generates bash scripts in the /full-directory-path/output-dir for each sample in the SampleSheet (Example SampleSheet and Amplicon sheets are provided in scCRISPR_suppFiles)
 
