@@ -70,7 +70,7 @@ parallel-fastq-dump --sra-id $srr --threads 12 --split-files --origfmt --gzip --
 scEDIT is avaible under MIT licence.
 
 ###Important note
-Author has solely created all the work provided here and preliminary results presented here are authors own interpretation of the data. Author's current employer is not in any way associated with work or results presented here. 
+Author has solely created all the work provided here and preliminary results presented here are authors own interpretation of the data. Author's current or previous employers are in any way not associated with work or results presented here. 
 
 ##Contact
 Gajendra Suryawanshi
