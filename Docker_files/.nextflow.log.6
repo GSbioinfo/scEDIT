@@ -1,0 +1,70 @@
+Jan-11 21:58:39.902 [main] DEBUG nextflow.cli.Launcher - $> nextflow run scEDIT_nextflow.nf
+Jan-11 21:58:40.000 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.3
+Jan-11 21:58:40.019 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/gajendra/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2
+Jan-11 21:58:40.029 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-11 21:58:40.030 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-11 21:58:40.034 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jan-11 21:58:40.048 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-11 21:58:40.117 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jan-11 21:58:40.134 [main] DEBUG nextflow.cli.CmdRun - Launching `scEDIT_nextflow.nf` [naughty_noyce] DSL2 - revision: 956012bfc6
+Jan-11 21:58:40.137 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-11 21:58:40.137 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-11 21:58:40.206 [main] DEBUG nextflow.Session - Session UUID: 58586a4b-934c-4e16-aa27-a4740cf09f40
+Jan-11 21:58:40.207 [main] DEBUG nextflow.Session - Run name: naughty_noyce
+Jan-11 21:58:40.208 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-11 21:58:40.220 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jan-11 21:58:40.231 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-11 21:58:40.266 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.3 build 5916
+  Created: 09-07-2024 19:35 UTC (12:35 PDT)
+  System: Linux 6.8.0-51-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.25+9-post-Ubuntu-1ubuntu122.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2020638@gajendra-desktop [127.0.1.1]
+  CPUs: 16 - Mem: 125.2 GB (53.4 GB) - Swap: 14.9 GB (14.9 GB)
+Jan-11 21:58:40.289 [main] DEBUG nextflow.Session - Work-dir: /home/gajendra/Dropbox/Github_repos/scEDIT/Docker_files/work [ext2/ext3]
+Jan-11 21:58:40.290 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/gajendra/Dropbox/Github_repos/scEDIT/Docker_files/bin
+Jan-11 21:58:40.330 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-11 21:58:40.345 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-11 21:58:40.385 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-11 21:58:40.397 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Jan-11 21:58:40.467 [main] DEBUG nextflow.Session - Session start
+Jan-11 21:58:40.947 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-11 21:58:40.959 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/gajendra/.nextflow/secrets/store.json
+Jan-11 21:58:40.966 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@173f1614] - activable => nextflow.secret.LocalSecretsProvider@173f1614
+Jan-11 21:58:41.078 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-11 21:58:41.078 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-11 21:58:41.084 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-11 21:58:41.091 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=125.2 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-11 21:58:41.096 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jan-11 21:58:41.217 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-11 21:58:41.217 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-11 21:58:41.246 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-11 21:58:41.246 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-11 21:58:41.254 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: runDockerContainer, runbashScripts, importDockerImage
+Jan-11 21:58:41.255 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Jan-11 21:58:41.256 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > importDockerImage
+Jan-11 21:58:41.257 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runDockerContainer
+Jan-11 21:58:41.258 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runbashScripts
+Jan-11 21:58:41.260 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_570de109e584d921: /home/gajendra/Dropbox/Github_repos/scEDIT/Docker_files/scEDIT_nextflow.nf
+Jan-11 21:58:41.261 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jan-11 21:58:41.262 [main] DEBUG nextflow.Session - Session await
+Jan-11 21:58:41.443 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-11 21:58:41.446 [Task submitter] INFO  nextflow.Session - [17/3caadf] Submitted process > importDockerImage
+Jan-11 21:59:18.023 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: importDockerImage; status: COMPLETED; exit: 0; error: -; workDir: /home/gajendra/Dropbox/Github_repos/scEDIT/Docker_files/work/17/3caadf2cdc490f73ee2a084e958251]
+Jan-11 21:59:18.025 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-11 21:59:18.056 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-11 21:59:18.056 [Task submitter] INFO  nextflow.Session - [f1/a97302] Submitted process > runDockerContainer
+Jan-11 21:59:18.061 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-11 21:59:18.062 [Task submitter] INFO  nextflow.Session - [d1/8e8052] Submitted process > runbashScripts (1)
+Jan-11 21:59:18.067 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: runDockerContainer; status: COMPLETED; exit: 0; error: -; workDir: /home/gajendra/Dropbox/Github_repos/scEDIT/Docker_files/work/f1/a97302143fb7a1d3f994e8edd998f1]
+Jan-11 21:59:18.072 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: runbashScripts (1); status: COMPLETED; exit: 0; error: -; workDir: /home/gajendra/Dropbox/Github_repos/scEDIT/Docker_files/work/d1/8e805284c7339a00664abbd634eea5]
+Jan-11 21:59:18.074 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jan-11 21:59:18.172 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jan-11 21:59:18.173 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-11 21:59:18.176 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jan-11 21:59:18.183 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=36.5s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Jan-11 21:59:18.321 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jan-11 21:59:18.332 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jan-11 21:59:18.332 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

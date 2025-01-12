@@ -28,10 +28,11 @@ print(run_import_df)
 
 print("*******************************************************************")
 print("Warning: scEDIT Version 001 runs multiple cppinputfile.\n")
-print("Warning: Running the script may delete dir name "+run_dir+"\n")
+print("Warning: Running the script will delete and create new dir name "+run_dir+"\n")
 print("Make sure that your output directory is not same as previous run.\n")
 print("Do you want to continue y/n:  ")
-deci_in=input()
+#deci_in=input()
+deci_in='y'
 #**************Creating run directory for the analysis************
 if deci_in.lower()!='y':
     print("Aborting run")
