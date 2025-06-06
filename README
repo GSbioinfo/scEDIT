@@ -45,7 +45,15 @@ Create conda environment using the file src/scEDIT_conda_env_packageList.yml
 
 ### Implementation (run in scEDIT conda environment)
  
-$ipython /full-directory-path/src/scEDIT_TapRipper_Wrapper.py /full-directory-path/SampleSheet.xlsx /full-directory-path/output-dir
+Usage: python scEDIT.py --mode BaseEdit/InDel --samples path/SampleList.xlsx --outDir path/output_directory
+
+    Single cell Edit detection and Identification Tool (scEDIT) runs two modes of analysis: InDel and BaseEdit
+        -InDel mode is used for single cell analysis of CRISPR-Cas induced indels 
+        -BaseEdit mode is used for single cell analysis of CRISPR-Cas induced base edits
+    
+    Each mode required different set of excel files containing amplicon primer information and gRNA details.
+    
+    The excel files need to have mode specific format.
 
 Above command generates bash scripts in the /full-directory-path/output-dir for each sample in the SampleSheet (Example SampleSheet and Amplicon sheets are provided in scCRISPR_suppFiles)
 
