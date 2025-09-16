@@ -67,11 +67,11 @@ final_count folder also contains plots showing cell rank and barcode count.
 
 ## Usage
 Single cell CRISPR data analyzed using scEDIT is from work of Elisa ten Hacken et al published in Genome Biology
-# High throughput single-cell detection of multiplex CRISPR-edited gene modifications
+### High throughput single-cell detection of multiplex CRISPR-edited gene modifications
 https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02174-1
 Single cell CRISPR base editing data analyzed using scEDIT is from work of Jorge D Martin-Rufino et al published in Cell
 2023 May 25;186(11):2456-2474.e24. doi: 10.1016/j.cell.2023.03.035. Epub 2023 May 2. 
-# Massively parallel base editing to map variant eXects in human hematopoiesis. Cell 186 (2023)
+### Massively parallel base editing to map variant eXects in human hematopoiesis. Cell 186 (2023)
 https://www.cell.com/cell/fulltext/S0092-8674(23)00332-X?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS009286742300332X%3Fshowall%3Dtrue
 
 For converting sra file to fastq file use following command
