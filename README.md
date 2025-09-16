@@ -6,10 +6,10 @@ Single cell Edit Detection and Identification Tool (scEDIT) for analysis of sing
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Implementation](#implementation)
 - [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -37,7 +37,7 @@ List any prerequisites, for example:
 - Python 3.9
 - Dependencies in src/scEDIT_conda_env_packageList.yml
 
-## Installation Steps
+## Installation
 Download the folder with all the 
 Create conda environment using the file src/scEDIT_conda_env_packageList.yml
 
@@ -65,9 +65,14 @@ Reads did not qualify the criteria are stored in dump fastq files stored in /Sub
 Final counts and edit details files stored in /SubjectID/SampleName/result_out/final_count/
 final_count folder also contains plots showing cell rank and barcode count. 
 
-## Single cell CRISPR data analyzed using scEDIT is from work of Elisa ten Hacken et al published in Genome Biology
-High throughput single-cell detection of multiplex CRISPR-edited gene modifications
+## Usage
+Single cell CRISPR data analyzed using scEDIT is from work of Elisa ten Hacken et al published in Genome Biology
+# High throughput single-cell detection of multiplex CRISPR-edited gene modifications
 https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02174-1
+Single cell CRISPR base editing data analyzed using scEDIT is from work of Jorge D Martin-Rufino et al published in Cell
+2023 May 25;186(11):2456-2474.e24. doi: 10.1016/j.cell.2023.03.035. Epub 2023 May 2. 
+# Massively parallel base editing to map variant eXects in human hematopoiesis. Cell 186 (2023)
+https://www.cell.com/cell/fulltext/S0092-8674(23)00332-X?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS009286742300332X%3Fshowall%3Dtrue
 
 For converting sra file to fastq file use following command
 parallel-fastq-dump --sra-id $srr --threads 12 --split-files --origfmt --gzip --defline-seq '@$ac.$sn  $sn length=$rl' --include-technical --outdir /your_fastq_dir
@@ -75,10 +80,9 @@ parallel-fastq-dump --sra-id $srr --threads 12 --split-files --origfmt --gzip --
 ## License
 scEDIT is avaible under MIT licence.
 
-## Important note
-Author has solely created all the work provided here and preliminary results presented here are authors own interpretation of the data. Author's current or previous employers are in any way not associated with work or results presented here. 
-
 ## Contact
 Gajendra Suryawanshi
 gw.suryawanshi@gmail.com
 
+### Important note
+Author has solely created all the work provided here and preliminary results presented here are authors own interpretation of the data. Author's current or previous employers are in any way not associated with work or results presented here. 
