@@ -2,8 +2,6 @@
 
 Single cell Edit Detection and Identification Tool (scEDIT) for analysis of single cell amplicon DNA-seq data generated on Tapestri platform.
 
-![Project Logo](path/to/logo.png)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -32,18 +30,18 @@ scEDIT starts with raw sequence data from Tapestry library, extracts and identif
 - Easy to install and use with conda environment
 - Also include tool for separating reads by cell barcode and Amplicon ID for deeper downstream analysis
 
-### Prerequisites
+## Prerequisites
 
 List any prerequisites, for example:
 
 - Python 3.9
 - Dependencies in src/scEDIT_conda_env_packageList.yml
 
-### Installation Steps
+## Installation Steps
 Download the folder with all the 
 Create conda environment using the file src/scEDIT_conda_env_packageList.yml
 
-### Implementation (run in scEDIT conda environment)
+## Implementation (run in scEDIT conda environment)
  
 Usage: python scEDIT.py --mode BaseEdit/InDel --samples path/SampleList.xlsx --outDir path/output_directory
 
@@ -67,20 +65,20 @@ Reads did not qualify the criteria are stored in dump fastq files stored in /Sub
 Final counts and edit details files stored in /SubjectID/SampleName/result_out/final_count/
 final_count folder also contains plots showing cell rank and barcode count. 
 
-###Single cell CRISPR data analyzed using scEDIT is from work of Elisa ten Hacken et al published in Genome Biology
+## Single cell CRISPR data analyzed using scEDIT is from work of Elisa ten Hacken et al published in Genome Biology
 High throughput single-cell detection of multiplex CRISPR-edited gene modifications
 https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02174-1
 
 For converting sra file to fastq file use following command
 parallel-fastq-dump --sra-id $srr --threads 12 --split-files --origfmt --gzip --defline-seq '@$ac.$sn  $sn length=$rl' --include-technical --outdir /your_fastq_dir
 
-##License
+## License
 scEDIT is avaible under MIT licence.
 
-###Important note
+## Important note
 Author has solely created all the work provided here and preliminary results presented here are authors own interpretation of the data. Author's current or previous employers are in any way not associated with work or results presented here. 
 
-##Contact
+## Contact
 Gajendra Suryawanshi
 gw.suryawanshi@gmail.com
 
